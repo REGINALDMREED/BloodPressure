@@ -88,13 +88,13 @@ Partial Class frmBloodPressure
         'ClearToolStripMenuItem
         '
         Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
         Me.ClearToolStripMenuItem.Text = "Clear"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'frmBloodPressure
@@ -109,7 +109,7 @@ Partial Class frmBloodPressure
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmBloodPressure"
-        Me.Text = "Form1"
+        Me.Text = "Patient Blood Pressur Report"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
