@@ -47,7 +47,7 @@ Partial Class frmBloodPressure
         'lblDisplayNum
         '
         Me.lblDisplayNum.AutoSize = True
-        Me.lblDisplayNum.Location = New System.Drawing.Point(186, 200)
+        Me.lblDisplayNum.Location = New System.Drawing.Point(111, 191)
         Me.lblDisplayNum.Name = "lblDisplayNum"
         Me.lblDisplayNum.Size = New System.Drawing.Size(39, 13)
         Me.lblDisplayNum.TabIndex = 1
@@ -56,7 +56,7 @@ Partial Class frmBloodPressure
         'lblDisplayAvg
         '
         Me.lblDisplayAvg.AutoSize = True
-        Me.lblDisplayAvg.Location = New System.Drawing.Point(186, 259)
+        Me.lblDisplayAvg.Location = New System.Drawing.Point(111, 244)
         Me.lblDisplayAvg.Name = "lblDisplayAvg"
         Me.lblDisplayAvg.Size = New System.Drawing.Size(39, 13)
         Me.lblDisplayAvg.TabIndex = 2
