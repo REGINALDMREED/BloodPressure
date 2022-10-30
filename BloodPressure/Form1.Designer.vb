@@ -23,88 +23,96 @@ Partial Class frmBloodPressure
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.lblDisplayNum = New System.Windows.Forms.Label()
+        Me.lblDisplayAvg = New System.Windows.Forms.Label()
+        Me.btnDisplay = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ClearToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuDisplay = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuclear = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(184, 48)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(77, 43)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(317, 26)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "Patient Blood Presure Report"
         '
-        'Label2
+        'lblDisplayNum
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(183, 135)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Label2"
+        Me.lblDisplayNum.AutoSize = True
+        Me.lblDisplayNum.Location = New System.Drawing.Point(186, 200)
+        Me.lblDisplayNum.Name = "lblDisplayNum"
+        Me.lblDisplayNum.Size = New System.Drawing.Size(39, 13)
+        Me.lblDisplayNum.TabIndex = 1
+        Me.lblDisplayNum.Text = "Label2"
         '
-        'Label3
+        'lblDisplayAvg
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(186, 259)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Label3"
+        Me.lblDisplayAvg.AutoSize = True
+        Me.lblDisplayAvg.Location = New System.Drawing.Point(186, 259)
+        Me.lblDisplayAvg.Name = "lblDisplayAvg"
+        Me.lblDisplayAvg.Size = New System.Drawing.Size(39, 13)
+        Me.lblDisplayAvg.TabIndex = 2
+        Me.lblDisplayAvg.Text = "Label3"
         '
-        'Button1
+        'btnDisplay
         '
-        Me.Button1.Location = New System.Drawing.Point(146, 192)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnDisplay.Location = New System.Drawing.Point(174, 124)
+        Me.btnDisplay.Name = "btnDisplay"
+        Me.btnDisplay.Size = New System.Drawing.Size(75, 23)
+        Me.btnDisplay.TabIndex = 3
+        Me.btnDisplay.Text = "Display"
+        Me.btnDisplay.UseVisualStyleBackColor = True
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFile})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(487, 24)
         Me.MenuStrip1.TabIndex = 4
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'FileToolStripMenuItem
+        'mnuFile
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClearToolStripMenuItem, Me.ExitToolStripMenuItem})
-        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
-        Me.FileToolStripMenuItem.Text = "File"
+        Me.mnuFile.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuDisplay, Me.mnuclear, Me.mnuExit})
+        Me.mnuFile.Name = "mnuFile"
+        Me.mnuFile.Size = New System.Drawing.Size(37, 20)
+        Me.mnuFile.Text = "File"
         '
-        'ClearToolStripMenuItem
+        'mnuDisplay
         '
-        Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
-        Me.ClearToolStripMenuItem.Text = "Clear"
+        Me.mnuDisplay.Name = "mnuDisplay"
+        Me.mnuDisplay.Size = New System.Drawing.Size(218, 22)
+        Me.mnuDisplay.Text = "Display Patient Information"
         '
-        'ExitToolStripMenuItem
+        'mnuclear
         '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(101, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
+        Me.mnuclear.Name = "mnuclear"
+        Me.mnuclear.Size = New System.Drawing.Size(218, 22)
+        Me.mnuclear.Text = "Clear"
+        '
+        'mnuExit
+        '
+        Me.mnuExit.Name = "mnuExit"
+        Me.mnuExit.Size = New System.Drawing.Size(218, 22)
+        Me.mnuExit.Text = "Exit"
         '
         'frmBloodPressure
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(487, 347)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.btnDisplay)
+        Me.Controls.Add(Me.lblDisplayAvg)
+        Me.Controls.Add(Me.lblDisplayNum)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -118,11 +126,12 @@ Partial Class frmBloodPressure
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents lblDisplayNum As Label
+    Friend WithEvents lblDisplayAvg As Label
+    Friend WithEvents btnDisplay As Button
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ClearToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents mnuFile As ToolStripMenuItem
+    Friend WithEvents mnuclear As ToolStripMenuItem
+    Friend WithEvents mnuExit As ToolStripMenuItem
+    Friend WithEvents mnuDisplay As ToolStripMenuItem
 End Class
